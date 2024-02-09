@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0066;
+    margin: 2;
+    padding: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #ff0000;
+}
+
+P {
+    color: aqua;
+}
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #3d3939;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #ff4081;
+    color: #0dff00;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #000000;
+}
+
+#responseMessage {
+    margin-top: 20px;
+}
+
+.flower,
+.heart {
+    max-width: 50px;
+    position: absolute;
+}
+
+.flower {
+    animation: flowerAnimation 2s forwards;
+}
+
+.heart {
+    animation: heartAnimation 2s forwards;
+}
+
+@keyframes flowerAnimation {
+    10% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-100px) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes heartAnimation {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    @keyframes changeColor {
+        10% { color: #ff4081; } /* Pink */
+        20% { color: #00bcd4; } /* Cyan */
+        40% { color: #4caf50; } /* Green */
+        60% { color: #ffeb3b; } /* Yellow */
+        80% { color: #ff9800; } /* Orange */
+        100% { color: #ff4081; } /* Back to Pink */
+    }
+    
+    .color-changing {
+        animation: changeColor 2s infinite;
+    }
+    
+    }
+    
+}
+

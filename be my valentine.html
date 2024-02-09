@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine Proposal</title>
+<link rel="stylesheet" href="CSS STYLE.CSS"">
+</head>
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0066;
+    margin: 2;
+    padding: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../Pictures/SC-Valentines-1366x768-fp_mm-fpoff_0_0.jpg);
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #e600ff;
+}
+
+    </style>
+    
+<div class="container">
+    <h1>Will You Be My Valentine? ❤️🌹</h1>
+    <p>Express your love with a heartfelt message</p>
+    
+    <form id="proposalForm">
+        <input type="text" name="sender_name" placeholder="Your Name" required>
+        <input type="text" name="recipient_name" placeholder="Recipient's Name" required>
+        <p>Do you accept this proposal?</p>
+        <label><input type="radio" name="proposal_response" value="accept" required> Accept</label>
+        <label><input type="radio" name="proposal_response" value="decline"> Decline</label>
+        <input type="submit" value="Send Proposal">
+    </form>
+    <div id="celebration">
+        <img src="../Pictures/d0b8bfe99111955174944415b5d76f88.gif" >
+        
+    </div>
+    <div id="responseContainer" style="display:flex"></div>
+
+    <div id="heart" style="display: none;">
+        <span class="heart">❤️</span>
+        <span class="heart">❤️</span>
+        <span class="heart">❤️</span>
+    </div>
+</div>
+
+<script src="../Downloads/java proposal.javaScript.js""></script>
+</body>
+</html>
